@@ -1,0 +1,23 @@
+{
+  "name": "example-node-module",
+  "version": "1.0.0",
+  "description": "example node module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandman45/example-node-module.git"
+  },
+  "author": "Matthew W Sanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandman45/example-node-module/issues"
+  },
+  "homepage": "https://github.com/sandman45/example-node-module#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
