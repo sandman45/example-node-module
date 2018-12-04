@@ -38,7 +38,30 @@ const execute = () => {
     });
 };
 
+const execute2 = (size) => {
+    return new Promise((resolve, reject) => {
+        let file = 'data/dread-steed-small.txt';
+        if(size === 'small') {
+            file = 'data/dread-steed-small.txt';
+        } else if(size === 'medium') {
+            file = 'data/dread-steed-medium.txt';
+        } else if(size === 'large') {
+            file = 'data/dread-steed.txt';
+        }
+        fs.readFile(file, 'utf8', (err, data) => {
+            if(err) {
+                console.log(err);
+                reject(err);
+            } else {
+                console.log(data);
+                resolve(data);
+            }
+        });
+    });
+};
+
 
 module.exports = {
     draw: execute,
+    draw2: execute2,
 };
